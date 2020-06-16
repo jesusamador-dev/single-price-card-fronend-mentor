@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    padding: 3rem 0;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 85%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px -3px rgba(152, 166, 189, .4);
+}
+
+.section-community {
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem 1.5rem;
+    background-color: white;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+.section-community h1 {
+    font-size: 1.4rem;
+    letter-spacing: -.1rem;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1.5rem;
+}
+
+.section-community h3 {
+    font-size: 1rem;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1.5rem;
+}
+
+.section-community p {
+    font-size: .8rem;
+    color: hsl(218, 22%, 67%);
+    line-height: 1.4rem;
+}
+
+.section-subscription,
+.section-why-us {
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem 1.5rem;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+}
+
+.section-subscription h3,
+.section-why-us h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+.section-subscription h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+.section-subscription h2 span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(204, 43%, 93%);
+    vertical-align: middle;
+}
+
+.section-subscription p {
+    font-size: .8rem;
+    margin-bottom: 1.8rem;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    box-shadow: 0px 8px 17px -4px rgba(0, 0, 0, .2);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    border-radius: .3rem;
+}
+
+.btn-signup {
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+}
+
+.section-why-us {
+    background-color: hsl(179, 45%, 50%);
+}
+
+.section-why-us p {
+    font-size: .8rem;
+    width: 70%;
+    color: hsl(204, 43%, 93%);
+    line-height: 1.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+    }
+    .section-community {
+        grid-column: 1 / -1;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .main {
+        width: 60%;
+    }
+    .section-community,
+    .section-subscription,
+    .section-why-us {
+        padding: 2.5rem 2rem;
+    }
+    .section-community p {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .main {
+        width: 50%;
+    }
+}
